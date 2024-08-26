@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .fade-in {
+      animation: fadeInUp 1s ease-in-out;
+    }
+  
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    .zoom-hover {
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .zoom-hover:hover {
+      transform: scale(1.05);
+    }
+  
+    .profile-pic {
+      max-width: 100%;
+      max-height: 400px;
+      width: auto;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+      animation: zoomOut 1s ease-in-out; /* Apply zoomOut animation on load */
+    }
+  
+    .profile-pic:hover {
+      transform: scale(1.1); /* Zoom in on hover */
+    }
+  
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  
+    @keyframes zoomOut {
+      0% {
+        transform: scale(1.2);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  
+    .styled-heading {
+      font-size: 2.5rem; /* Increased font size */
+      font-weight: bold;
+      color: #1a202c; /* Dark gray color */
+      background: -webkit-linear-gradient(45deg, #1a202c, #2b6cb0); /* Gradient text */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 10px;
+      border-bottom: 3px solid #2b6cb0; /* Bottom border */
+      display: inline-block;
+      margin-top: 20px;
+    }
+  </style>
+  </style>
+</head>
+<body class="bg-gray-100">
+  <header class="shadow fade-in bg-white">
+    <div class="container mx-auto px-6 py-3">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img src="images/My_Logo-02.png" alt="TAATIKO Designs Logo" class="h-20 w-15 mr-2">
+            <!-- <span class="text-gray-800 text-xl font-bold md:text-2xl">My Portfolio</span> -->
+          </a>
+        </div>
+        <div class="space-x-4">
+          <a href="index.html" class="text-gray-800 hover:text-blue-700 ">Home</a>
+          <a href="about.html" class="text-gray-800 hover:text-blue-700 ">About</a>
+          <a href="projects.html" class="text-gray-800 hover:text-blue-700 ">Projects</a>
+          <a href="contact.html" class="text-gray-800 hover:text-blue-700 ">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-8">
+    <section class="text-center fade-in">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800">About Me</h1>
+      <p class="mt-4 text-gray-600">Get to know more about my background, skills, and experience.</p>
+    </section>
+
+    <section class="mt-12 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 p-6">
+        <img src="images/me1.jpg" alt="Profile Picture" class="profile-pic rounded-md shadow-lg">
+      </div>
+      <div class="md:w-1/2 p-6 fade-in">
+        <h2 class="styled-heading">Hi, I'm Ahmed Abdirahim Osman</h2>
+        <p class="mt-4 text-gray-600">I am a passionate graphic designer and freelancer with a keen eye for detail and a commitment to delivering high-quality work. My journey began with a deep interest in visual arts and technology, and has since evolved into a rewarding career.</p>
+        <p class="mt-4 text-gray-600">I specialize in creating visually compelling designs, from logos and branding materials to motion graphics and web interfaces. My expertise spans various design tools and software, including Adobe Creative Suite (Photoshop, Illustrator, After Effects) and Figma.</p>
+        <p class="mt-4 text-gray-600">In addition to my design skills, I have experience in web development, utilizing technologies like HTML, CSS, and JavaScript, along with frameworks such as Tailwind CSS and React. I am also proficient in backend development with Node.js and database management with MongoDB.</p>
+
+      </div>
+    </section>
+
+    <section class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 fade-in">
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Background</h2>
+        <p class="mt-2 text-gray-600">I started my journey in graphic design with a passion for visual arts and technology. Over the years, I have honed my skills and gained extensive knowledge in creating visually compelling designs and branding materials.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Skills</h2>
+        <p class="mt-2 text-gray-600">I have a diverse skill set that includes proficiency in Adobe Creative Suite (Photoshop, Illustrator, After Effects) and Figma for creating visually compelling designs. I specialize in logo design, branding, motion graphics, and web interfaces, ensuring modern and responsive designs.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Experience</h2>
+        <p class="mt-2 text-gray-600">Throughout my career, I have worked on a diverse range of projects, from logo designs and branding for small businesses to comprehensive motion graphics and web interfaces for larger clients. My focus has always been on delivering high-quality, visually compelling designs that meet client needs and exceed their expectations.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Education</h2>
+        <p class="mt-2 text-gray-600">I hold a degree in Computer Science and have completed numerous online courses in graphic design to stay updated with the latest trends and tools in the industry. My education has provided me with a solid foundation and the skills necessary to excel as a graphic designer and freelancer.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shadow mt-12 fade-in bg-white">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <p class="text-gray-800">&copy; 2024 Ahmed Abdirahim Osman. All rights reserved.</p>
+        <div>
+          <a href="privacy.html" class="text-gray-800 hover:text-blue-700 hover:underline mx-2">Privacy Policy</a>
+          <a href="terms.html" class="text-gray-800 hover:text-blue-700 hover:underline mx-2">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

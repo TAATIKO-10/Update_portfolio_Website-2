@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Social Media Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    .fade-in {
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .styled-heading {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #1a202c;
+      background: -webkit-linear-gradient(45deg, #1a202c, #2b6cb0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 10px;
+      border-bottom: 3px solid #2b6cb0;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .contact-bg {
+      background: url('images/contact-bg.jpg') no-repeat center center/cover;
+    }
+
+    .contact-form {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <header class="shadow fade-in bg-white">
+    <div class="container mx-auto px-6 py-3">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img src="images/My_Logo-02.png" alt="TAATIKO Designs Logo" class="h-20 w-15 mr-2">
+            <!-- <span class="text-gray-800 text-xl font-bold md:text-2xl">My Portfolio</span> -->
+          </a>
+        </div>
+        <div class="space-x-4">
+          <a href="index.html" class="text-gray-800 hover:text-blue-700 ">Home</a>
+          <a href="about.html" class="text-gray-800 hover:text-blue-700 ">About</a>
+          <a href="projects.html" class="text-gray-800 hover:text-blue-700 ">Projects</a>
+          <a href="contact.html" class="text-gray-800 hover:text-blue-700 ">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-8 contact-bg">
+    <section class="text-center fade-in">
+      <h1 class="styled-heading">Contact Me</h1>
+      <p class="mt-4 text-gray-100">Feel free to reach out to me for any inquiries or collaborations.</p>
+     
+    </section>
+
+    <section class="mt-12 flex justify-center fade-in">
+      <div class="w-full md:w-2/3 lg:w-1/2 contact-form">
+        <form action="https://formspree.io/f/mqazqnbg" method="POST">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+            <input type="email" id="email" name="_replyto" required placeholder="qooje1090@gmail.com" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-bold mb-2">Message:</label>
+            <textarea id="message" name="message" required placeholder="Enter your message here" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+          </div>
+          <div class="flex justify-center">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-400 focus:outline-none focus:bg-blue-400">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <img src="images/qr-code.png" alt="QR Code" class="mt-6 mx-auto w-32 h-32">
+  </main>
+
+  <footer class="shadow mt-12 fade-in bg-white">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <p class="text-gray-800">&copy; 2024 Ahmed Abdirahim Osman. All rights reserved.</p>
+        <div class="flex space-x-4">
+          <!-- Social Media Links -->
+          <a href="https://www.facebook.com/Ahmed.updy.10" target="_blank" class="text-gray-800 hover:text-blue-700 transition-colors duration-300">
+            <i class="fab fa-facebook-f text-xl"></i>
+          </a>
+          <a href="https://twitter.com/yourprofile" target="_blank" class="text-gray-800 hover:text-blue-500 transition-colors duration-300">
+            <i class="fab fa-twitter text-xl"></i>
+          </a>
+          <a href="https://www.instagram.com/_taa_tiko/" target="_blank" class="text-gray-800 hover:text-pink-600 transition-colors duration-300">
+            <i class="fab fa-instagram text-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-gray-800 hover:text-blue-800 transition-colors duration-300">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+        </div>
+        <div>
+          <a href="privacy.html" class="text-gray-800 hover:text-blue-700 hover:underline mx-2">Privacy Policy</a>
+          <a href="terms.html" class="text-gray-800 hover:text-blue-700 hover:underline mx-2">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

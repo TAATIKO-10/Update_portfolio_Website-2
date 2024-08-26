@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Social Media Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Styles and animations */
+    .fade-in {
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .zoom-hover {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .zoom-hover:hover {
+      transform: scale(1.05);
+    }
+    
+    .styled-heading {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #1a202c;
+      background: -webkit-linear-gradient(45deg, #1a202c, #2b6cb0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 10px;
+      border-bottom: 3px solid #2b6cb0;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .zoom-hover {
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .zoom-hover:hover {
+      transform: scale(1.05);
+    }
+  
+    .profile-pic {
+      max-width: 100%;
+      max-height: 400px;
+      width: auto;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+      animation: zoomOut 1s ease-in-out; /* Apply zoomOut animation on load */
+    }
+  
+    .profile-pic:hover {
+      transform: scale(1.1); /* Zoom in on hover */
+    }
+  </style>
+  
+</head>
+<body class="bg-gray-100">
+  <header class="shadow fade-in bg-white">
+    <div class="container mx-auto px-6 py-3">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img src="images/My_Logo-02.png" alt="TAATIKO Designs Logo" class="h-20 w-15 mr-2">
+            <!-- <span class="text-gray-800 text-xl font-bold md:text-2xl">My Portfolio</span> -->
+          </a>
+        </div>
+        <div class="space-x-4">
+          <a href="index.html" class="text-gray-800 hover:text-blue-700">Home</a>
+          <a href="about.html" class="text-gray-800 hover:text-blue-700 ">About</a>
+          <a href="projects.html" class="text-gray-800 hover:text-blue-700 ">Projects</a>
+          <a href="contact.html" class="text-gray-800 hover:text-blue-700 ">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <main class="container mx-auto px-6 py-8">
+    <section class="text-center fade-in">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800">Welcome to My Portfolio</h1>
+      <p class="mt-4 text-gray-600">Explore my latest projects and designs.</p>
+      <a href="projects.html" class="mt-6 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-400">Get Started</a>
+    </section>
+
+    <section class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in">
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <img src="images/Banner Mockup.jpg" alt="Project 1" class="w-full h-50 object-cover rounded-md">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Project 1</h2>
+        <p class="mt-2 text-gray-600">A brief description of Project 1.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <img src="images/lo-01.jpg" alt="Project 2" class="w-full h-50 object-cover rounded-md">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Project 2</h2>
+        <p class="mt-2 text-gray-600">A brief description of Project 2.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <img src="images/poster.png" alt="Project 3" class="w-full h-50 object-cover rounded-md">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Project 3</h2>
+        <p class="mt-2 text-gray-600">A brief description of Project 3.</p>
+      </div>
+    </section>
+
+    <!-- About me Section -->
+    <section class="mt-12 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 p-6">
+        <img src="images/me1.jpg" alt="Profile Picture" class="profile-pic rounded-md shadow-lg">
+      </div>
+      <div class="md:w-1/2 p-6 fade-in">
+        <h2 class="styled-heading">Hi, I'm Ahmed Abdirahim Osman</h2>
+        <p class="mt-4 text-gray-600">I am a passionate graphic designer and freelancer with a keen eye for detail and a commitment to delivering high-quality work. My journey began with a deep interest in visual arts and technology, and has since evolved into a rewarding career.</p>
+        <p class="mt-4 text-gray-600">I specialize in creating visually compelling designs, from logos and branding materials to motion graphics and web interfaces. My expertise spans various design tools and software, including Adobe Creative Suite (Photoshop, Illustrator, After Effects) and Figma.</p>
+        <p class="mt-4 text-gray-600">In addition to my design skills, I have experience in web development, utilizing technologies like HTML, CSS, and JavaScript, along with frameworks such as Tailwind CSS and React. I am also proficient in backend development with Node.js and database management with MongoDB.</p>
+
+      </div>
+    </section>
+
+    <section class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 fade-in">
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Background</h2>
+        <p class="mt-2 text-gray-600">I started my journey in graphic design with a passion for visual arts and technology. Over the years, I have honed my skills and gained extensive knowledge in creating visually compelling designs and branding materials.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Skills</h2>
+        <p class="mt-2 text-gray-600">I have a diverse skill set that includes proficiency in Adobe Creative Suite (Photoshop, Illustrator, After Effects) and Figma for creating visually compelling designs. I specialize in logo design, branding, motion graphics, and web interfaces, ensuring modern and responsive designs.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Experience</h2>
+        <p class="mt-2 text-gray-600">Throughout my career, I have worked on a diverse range of projects, from logo designs and branding for small businesses to comprehensive motion graphics and web interfaces for larger clients. My focus has always been on delivering high-quality, visually compelling designs that meet client needs and exceed their expectations.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Education</h2>
+        <p class="mt-2 text-gray-600">I hold a degree in Computer Science and have completed numerous online courses in graphic design to stay updated with the latest trends and tools in the industry. My education has provided me with a solid foundation and the skills necessary to excel as a graphic designer and freelancer.</p>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="text-center fade-in">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800">My Projects</h1>
+      <p class="mt-4 text-gray-600">Here are some of the projects I have worked on.</p>
+    </section>
+
+    <section class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in">
+      <!-- Project 1 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <img src="images/ID_car-03.jpg" alt="Project 1" class="w-full h-50 object-cover rounded-md">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Project 1</h2>
+        <p class="mt-2 text-gray-600"> This project showcases...</p>
+        <a href="project1-details.html" class="mt-4 inline-block text-blue-500 hover:text-blue-700 hover:underline">Read More</a>
+      </div>
+      <!-- Project 2 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <img src="images/poster.png" alt="Project 2" class="w-full h-50 object-cover rounded-md">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Project 2</h2>
+        <p class="mt-2 text-gray-600"> This project involves...</p>
+        <a href="project2-details.html" class="mt-4 inline-block text-blue-500 hover:text-blue-700 hover:underline">Read More</a>
+      </div>
+      <!-- Project 3 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 zoom-hover">
+        <img src="images/TAATIKO-01.png" alt="Project 3" class="w-full h-50 object-cover rounded-md">
+        <h2 class="text-xl font-semibold text-gray-800 mt-4">Project 3</h2>
+        <p class="mt-2 text-gray-600"> This project features...</p>
+        <a href="project3-details.html" class="mt-4 inline-block text-blue-500 hover:text-blue-700 hover:underline">Read More</a>
+      </div>
+      <!-- Add more projects as needed -->
+    </section>
+
+    <!-- Contact me section -->
+    <section class="text-center fade-in">
+      <h1 class="styled-heading">Contact Me</h1>
+      
+    </section>
+
+    <section class="mt-12 flex justify-center fade-in">
+      <div class="w-full md:w-2/3 lg:w-1/2 contact-form">
+        <form action="https://formspree.io/f/mqazqnbg" method="POST">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+            <input type="email" id="email" name="_replyto" required placeholder="qooje1090@gmail.com" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-bold mb-2">Message:</label>
+            <textarea id="message" name="message" required placeholder="Enter your message here" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+          </div>
+          <div class="flex justify-center">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-400 focus:outline-none focus:bg-blue-400">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+  </main>
+  <!-- footer -->
+  <footer class="shadow mt-12 fade-in bg-white">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <p class="text-gray-800">&copy; 2024 Ahmed Abdirahim Osman. All rights reserved.</p>
+        <div class="flex space-x-4">
+          <!-- Social Media Links -->
+          <a href="https://www.facebook.com/Ahmed.updy.10" target="_blank" class="text-gray-800 hover:text-blue-700 transition-colors duration-300">
+            <i class="fab fa-facebook-f text-xl"></i>
+          </a>
+          <a href="https://twitter.com/yourprofile" target="_blank" class="text-gray-800 hover:text-blue-500 transition-colors duration-300">
+            <i class="fab fa-twitter text-xl"></i>
+          </a>
+          <a href="https://www.instagram.com/_taa_tiko/" target="_blank" class="text-gray-800 hover:text-pink-600 transition-colors duration-300">
+            <i class="fab fa-instagram text-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-gray-800 hover:text-blue-800 transition-colors duration-300">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+        </div>
+        <div>
+          <a href="privacy.html" class="text-gray-800 hover:text-blue-700 hover:underline mx-2">Privacy Policy</a>
+          <a href="terms.html" class="text-gray-800 hover:text-blue-700 hover:underline mx-2">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+ <!-- Js link -->
+  <script src="script.js"></script>
+</body>
+</html>
